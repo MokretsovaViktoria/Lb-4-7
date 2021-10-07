@@ -1,0 +1,25 @@
+# Программирование на языке высокого уровня (Python).
+# https://www.yuripetrov.ru/edu/python
+# Задание task_04_02_10.
+#
+# Выполнил: Мокрецова А. В.
+# Группа: АДЭУ-211
+# E-mail: !!!
+
+n = int(input("n = "))
+dlina = len(str(n))
+n_sum = 0
+n_count = 0
+while n > 0:
+  ost = n % 10
+  n_sum = ost + n_sum
+  n = n//10
+print("сумма = ", n_sum)
+print("количество = ", dlina)
+
+# --------------
+# Пример вывода:
+#
+# n = 12345
+# Сумма = 15
+# Количество = 5
