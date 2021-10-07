@@ -1,0 +1,37 @@
+ Программирование на языке высокого уровня (Python).
+# https://www.yuripetrov.ru/edu/python
+# Задание task_04_02_12.
+#
+# Выполнил: Фамилия И.О.
+# Группа: !!!
+# E-mail: !!!
+
+a = int(input())
+b = int(input())
+
+if a==b:
+  print(a)
+  print(a)
+elif a>b:
+  for i in range (a- b +1):
+    print(b + i, end ="")
+    print(" ")
+    for i in range (a - b +1):
+      print(a -i)
+else:
+  for i in range (b - a +1):
+    print(i + 1, end=" ")
+  print(" ")
+  for i in range(b - a +1):
+    print(b - i)
+# --------------
+# Пример вывода:
+#
+# a = 1
+# b = 5
+# 1 2 3 4 5
+# 5
+# 4
+# 3
+# 2
+# 1
