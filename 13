@@ -1,0 +1,43 @@
+# Программирование на языке высокого уровня (Python).
+# https://www.yuripetrov.ru/edu/python
+# Задание task_04_02_13.
+#
+# Выполнил: Мокрецова В.А.
+# Группа: АДЭУ-211
+# E-mail: vereina.m@yandex.ru
+
+import math
+a = int(input("a = "))
+b = int(input("b = "))
+
+n_sum = 0
+n_mult = 1
+n_res = 0
+n_mult_g = 1
+n_res_g = 0
+
+for i in range(a, b+1):
+    n_sum += i
+    n_mult *= i
+    n_res += 1
+    if i % 2 == 1:
+        n_mult_g *= i
+        n_res_g += 1
+
+n_avg = n_sum / n_res
+n_avg_geom = math.pow(n_mult_g, 1/n_res_g)
+
+print("Сумма =", n_sum)
+print("Произведение =", n_mult)
+print("Среднее арифметическое = {:.2f}".format(n_avg))
+print("Среднее геометрическое нечетных чисел = {:.2f}".format(n_avg_geom))
+
+# --------------
+# Пример вывода:
+#
+# a = 1
+# b = 5
+# Сумма = 15
+# Произведение = 120
+# Среднее арифметическое = 3.00
+# Среднее геометрическое нечетных чисел = 2.47
